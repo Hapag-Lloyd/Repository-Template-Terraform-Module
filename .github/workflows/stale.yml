@@ -1,0 +1,12 @@
+---
+name: "Close stale issues and PRs"
+
+# yamllint disable-line rule:truthy
+on:
+  schedule:
+    - cron: "25 2 * * *"
+
+jobs:
+  default:
+    uses: Hapag-Lloyd/Workflow-Templates/.github/workflows/default_stale_callable.yml@514cf33cb1a4e0581c00383c2b67cabf5f76f24e
+    secrets: inherit
