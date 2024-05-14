@@ -1,0 +1,14 @@
+---
+name: PR opened
+
+# yamllint disable-line rule:truthy
+on:
+  pull_request_target:
+    types:
+      - opened
+
+jobs:
+  default:
+    # yamllint disable-line rule:line-length
+    uses: Hapag-Lloyd/Workflow-Templates/.github/workflows/default_welcome_message_callable.yml@733afe1105fc85fafc25cddbc3c34b48c2c3d6fa
+    secrets: inherit

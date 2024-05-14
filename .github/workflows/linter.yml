@@ -1,0 +1,11 @@
+---
+name: Lint files
+
+# yamllint disable-line rule:truthy
+on:
+  pull_request:
+
+jobs:
+  default:
+    uses: Hapag-Lloyd/Workflow-Templates/.github/workflows/default_linter_callable.yml@733afe1105fc85fafc25cddbc3c34b48c2c3d6fa
+    secrets: inherit
