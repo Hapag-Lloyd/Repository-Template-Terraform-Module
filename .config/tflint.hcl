@@ -11,7 +11,7 @@ plugin "terraform" {
 plugin "aws" {
   source  = "github.com/terraform-linters/tflint-ruleset-aws"
   # renovate: datasource=github-tags depName=terraform-linters/tflint-ruleset-aws
-  version = "v0.31.0"
+  version = "0.31.0"
 
   enabled    = true
   deep_check = true
