@@ -8,5 +8,5 @@ on:
 jobs:
   default:
     # yamllint disable-line rule:line-length
-    uses: Hapag-Lloyd/Workflow-Templates/.github/workflows/terraform_module_terraform_callable.yml@a28fa2f991164959262587011188af99a7f0cb20
+    uses: Hapag-Lloyd/Workflow-Templates/.github/workflows/terraform_module_terraform_callable.yml@1a73d7cd5eb4439fdd6ee485fb80d03a17c1fe4b
     secrets: inherit
