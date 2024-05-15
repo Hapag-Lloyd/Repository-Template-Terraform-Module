@@ -16,6 +16,9 @@ pre-commit install -c .github/pre-commit-config.yaml
 In case a major release is published on the Workflow-Template repository, run `.github/update_workflows.sh`. This creates a PR
 with the changes in the workflows. Carefully check the changes and merge them into the `main` branch.
 
+You have to setup the [Terraform Registry](https://registry.terraform.io/) by your own, e.g. register the module and setup the
+webhook in the repository.
+
 ## Development
 
 ### Usage
