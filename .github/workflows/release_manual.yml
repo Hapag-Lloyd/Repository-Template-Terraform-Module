@@ -1,0 +1,13 @@
+---
+name: Prepare Release PR
+
+# yamllint disable-line rule:truthy
+on:
+  # we don't want to trigger a release here as some setup is needed (done in init-workflow branch)
+  workflow_dispatch:
+
+jobs:
+  default:
+    # yamllint disable-line rule:line-length
+    uses: Hapag-Lloyd/Workflow-Templates/.github/workflows/terraform_module_release_manual_callable.yml@514cf33cb1a4e0581c00383c2b67cabf5f76f24e
+    secrets: inherit

@@ -1,0 +1,12 @@
+---
+name: Terraform
+
+# yamllint disable-line rule:truthy
+on:
+  pull_request:
+
+jobs:
+  default:
+    # yamllint disable-line rule:line-length
+    uses: Hapag-Lloyd/Workflow-Templates/.github/workflows/terraform_module_terraform_callable.yml@d30f69837e66da5f6f31174dc8e808a7429b0068
+    secrets: inherit
