@@ -39,7 +39,7 @@ gh repo clone https://github.com/Hapag-Lloyd/Workflow-Templates.git "$latest_wor
 (
   cd "$latest_workflows_path" || exit 7
 
-  ./update-workflows.sh "$current_directory" terraform_module --release-type ${1:-auto}
+  ./update-workflows.sh "$current_directory" terraform_module --release-type "${1:-auto}"
 )
 
 rm -rf "$latest_workflows_path"
