@@ -3,6 +3,8 @@
 #
 # This script updates the current repository with the latest version of the workflows. It creates a new branch and a pull request.
 #
+# $1: the release type, optional, use "manual", "auto" is the default
+#
 
 function ensure_dependencies_or_exit() {
   if ! command -v gh &> /dev/null; then
@@ -37,7 +39,7 @@ gh repo clone https://github.com/Hapag-Lloyd/Workflow-Templates.git "$latest_wor
 (
   cd "$latest_workflows_path" || exit 7
 
-  ./update-workflows.sh "$current_directory" docker
+  ./update-workflows.sh "$current_directory" terraform_module --release-type "${1:-auto}"
 )
 
 rm -rf "$latest_workflows_path"
