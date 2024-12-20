@@ -7,5 +7,5 @@ hooks:
     'types': [ text ]
     args: [ ]
     require_serial: false
-    additional_dependencies: [ "prettier@4.0.0-alpha.8" ]
+    additional_dependencies: [ "prettier@3.4.2" ]
     minimum_pre_commit_version: '0'
