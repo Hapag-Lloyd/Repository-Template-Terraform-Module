@@ -33,11 +33,11 @@ repos:
     hooks:
       - id: prettier1
         name: prettier1
-        description: 'Format files with prettier'
-        entry: prettier --write --ignore-unknown
+        description: "Format files with prettier"
+        entry: prettier --write --ignore-unknown --cache
         language: node
-        'types': [ text ]
-        args: [ ]
+        "types": [text]
+        args: []
         require_serial: false
-        additional_dependencies: [ "prettier@3.4.2" ]
-        minimum_pre_commit_version: '0'
+        additional_dependencies: ["prettier@3.4.2"]
+        minimum_pre_commit_version: "0"
