@@ -34,7 +34,4 @@ repos:
     hooks:
       - id: prettier
         files: \.(json|yaml|yml)$ # do not process markdown. Conflicts with the terraform_docs hook
-  - repo: https://github.com/Hapag-Lloyd/Repository-Template-Terraform-Module
-    rev: dbd5acf31b59071b1de2b2f867f34d7adf3e444f
-    hooks:
-      - id: prettier
+
