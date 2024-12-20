@@ -34,4 +34,6 @@ repos:
     hooks:
       - id: prettier
         files: \.(json|yaml|yml)$ # do not process markdown. Conflicts with the terraform_docs hook
-
+  - repo: local
+    hooks:
+      - id: prettier
