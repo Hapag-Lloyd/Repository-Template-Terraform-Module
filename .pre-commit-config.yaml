@@ -36,8 +36,8 @@ repos:
         files: \.(json|yaml|yml)$ # do not process markdown. Conflicts with the terraform_docs hook
   - repo: local
     hooks:
-      - id: prettier
-        name: prettier
+      - id: prettier1
+        name: prettier1
         description: ''
         entry: prettier --write --ignore-unknown
         language: node
