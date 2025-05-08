@@ -1,0 +1,11 @@
+# IntelliJ
+.idea/
+*.iml
+
+# Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate*
+
+# InfraCost
+.infracost/
