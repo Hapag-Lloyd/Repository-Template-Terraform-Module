@@ -2,7 +2,10 @@ ci: set up workflows
 
 # Description
 
-Enables the release workflow.
+Enables the release workflow. Either use
+
+- `release.yml` and `release_dry_run.yml` for automatic releases
+- `release_manual.yml` for manual releases
 
 # TODOs
 
