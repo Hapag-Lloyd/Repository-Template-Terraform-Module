@@ -2,8 +2,7 @@
 name: Approve all Renovate PRs automatically
 
 # yamllint disable-line rule:truthy
-on:
-  pull_request_target
+on: pull_request_target
 
 jobs:
   default:
